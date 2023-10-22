@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border-left: 4px solid #333;
+            border-right: 4px solid #333;
+        }
+        #header {
+            background-color: #333;
+            padding: 10px;
+        }
+        #logo {
+            font-size: 24px;
+            color: #fff;
+        }
+        #title {
+            text-align: center;
+        }
+        .calculator-text p:first-child {
+            background-color: blue;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .calculator-text p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        #result {
+            margin-top: 10px;
+        }
+        .calculator-text #calculate {
+            margin-top: 10px;
+        }
+        .calculator-text p:last-child {
+            text-align: center;
+            margin-top: 0;
+        }
+        #calculate {
+            display: block;
+            margin: 0 auto;
+        }
+        #calculate:hover {
+            background-color: green;
+            color: blue;
+        }
+        .calculator-text {
+            font-size: 18px;
+            text-align: center;
+        }
+        #calculate {
+            background-color: blue;
+            color: green;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        #result {
+            font-size: 18px;
+            color: green;
+            font-weight: bold;
+        }
+        #footer {
+            background-color: #333;
+            padding: 10px;
+            color: #fff;
+        }
+        #icons {
+            font-size: 24px;
+        }
+        .input-field {
+            text-align: center;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ELECTROSOLVEZ</title>
+        <link rel="icon" type="image/x-icon" href="ELECTROSOLVEZ-logo.jpg">
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="app.html">Kilometer and Fuel Calculator</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <div class="container">
+        <div id="header">
+               <img src="ELECTROSOLVEZ-logo.jpg" alt="ELECTROSOLVEZ Logo" id="logo" style="width: 100px; height: 100px;">
+        </div>
+        <div class="calculator-text">
+            <p class="text-center">Kilometer and Fuel Calculator</p>
+            <p class="text-center">Distance (in km):</p>
+            <input type="text" id="distance" class="input-field" placeholder="Enter distance" onfocus="changeToBlue()">
+            <p class="text-center">Fuel Efficiency (in km per liter):</p>
+            <input type="text" id="efficiency" class="input-field" placeholder="Enter fuel efficiency" onfocus="changeToBlue()">
+            <p class="text-center">Fuel Price (per liter):</p>
+            <input type="text" id="price" class="input-field" placeholder="Enter fuel price" onfocus="changeToBlue()">
+            <button id="calculate" onclick="calculateFuelConsumption()" class="input-field">Calculate</button>
+            <p class="text-center" id="result">Please enter valid values for distance, efficiency, and price.</p>
+        </div>
+        <div id="footer">
+            <p class="text-center">Developed By ELECTROSOLVEZ - 2023</p>
+        </div>
+    </div>
+    <script>
+        function calculateFuelConsumption() {
+            var distance = parseFloat(document.getElementById("distance").value);
+            var efficiency = parseFloat(document.getElementById("efficiency").value);
+            var price = parseFloat(document.getElementById("price").value);
+            
+            if (!isNaN(distance) && !isNaN(efficiency) && !isNaN(price)) {
+                var consumption = (distance / efficiency);
+                var cost = consumption * price;
+                document.getElementById("result").innerHTML = "Fuel consumption: " + consumption.toFixed(2) + " liters, Total Cost: " + cost.toFixed(2) + " PKR";
+            } else {
+                document.getElementById("result").innerHTML = "Please enter valid values for distance, efficiency, and price.";
+            }
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+/* Add a border to the entire webpage */
+body {
+  border: 6px solid #1036ce; /* You can change the color by replacing #1036ce with the desired color code */
+  margin: 0; /* Remove default margin for full-width border */
+  padding: 0; /* Remove default padding for full-width border */
+  box-sizing: border-box; /* Ensure padding is included in the total width/height */
+}
+/* Header CSS with 1px padding */
+header {
+   background-color: #3498db;
+   text-align: center;
+   padding: 6px;
+   display: flex;
+   align-items: center;
+   margin: 1px 1px; /* Add 1px margin to the left and right */
+}
+
+header img {
+  max-width: 11%;
+  margin-right: 400px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 42px;
+  text-align: center;
+}
+/*header css end */
+/* Reset default margin and padding on elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+/* Style the main content area */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the sections and their headings */
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  background-color:#3498db;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Style the lists */
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 5px 0;
+}
+/* footer css start*/
+  /* Footer CSS */
+footer {
+  background-color: #3498db;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px; /* Increased padding for better spacing */
+  margin: 1px 1px;
+}
+/* CSS for footer icons */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons a {
+  margin: 0 10px; /* Adjust the margin for spacing */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icons img {
+  width: 24px; /* Reduced icon size */
+  height: 24px; /* Reduced icon size */
+}
+
+/* CSS for footer text */
+.footer-text {
+  text-align: center;
+  font-size: 30px;
+  margin: 0;
+}

@@ -25,6 +25,10 @@ header {
     font-size: 42px;
     text-align: center;
   }
+  iframe src { justify-content: center;
+    align-items: center;
+    padding: 6px; /* Increased padding for better spacing */
+    margin: 1px 1px;}
 /* Adjust other styles as needed for your website's design */
 
   /* Footer CSS */

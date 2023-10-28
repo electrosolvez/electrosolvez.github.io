@@ -1,3 +1,6 @@
+@media (max-width: 768px) {
+  /* Your CSS rules for small screens go here */
+}
 /* Add a border to the entire webpage */
 body {
   border: 6px solid #1036ce; /* You can change the color by replacing #1036ce with the desired color code */

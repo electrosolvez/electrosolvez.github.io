@@ -1,20 +1,16 @@
-@media (max-width: 768px) {
-  /* Your CSS rules for small screens go here */
-}
-
 /* Add a border to the entire webpage */
 body {
-  border: 2% solid #1036ce; /* You can change the color by replacing #1036ce with the desired color code */
+  border: 6px solid #1036ce; /* You can change the color by replacing #1036ce with the desired color code */
   margin: 0; /* Remove default margin for full-width border */
   padding: 0; /* Remove default padding for full-width border */
   box-sizing: border-box; /* Ensure padding is included in the total width/height */
 }
 
-/* Header CSS with 1% padding */
+/* Header CSS with 1px padding */
 header {
   background-color: #3498db;
   text-align: center;
-  padding: 2%;
+  padding: 6px;
   display: flex;
   align-items: center;
   margin: 1px 1px; /* Add 1px margin to the left and right */
@@ -22,16 +18,16 @@ header {
 
 header img {
   max-width: 11%;
-  margin-right: 13.33%; /* Adjust margin to make it 1% of the container width */
+  margin-right: 400px;
 }
 
 header h1 {
   color: #fff;
-  font-size: 4.2%; /* Adjust font size to be relative to the container width */
+  font-size: 42px;
   text-align: center;
 }
 
-/* Navigation CSS with 1% padding */
+/* Navigation CSS with 1px padding */
 nav ul {
   border: 1px solid black;
   list-style-type: none;
@@ -40,7 +36,7 @@ nav ul {
 
 nav li {
   display: inline;
-  margin: 1.33%; /* Adjust margin to make it 1% of the container width */
+  margin: 10px;
 }
 
 nav a {
@@ -49,7 +45,7 @@ nav a {
   border-radius: 5px;
   color: #fff;
   display: inline-block;
-  padding: 1.33% 2.67%; /* Adjust padding to be relative to the container width */
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
 }
@@ -58,28 +54,27 @@ nav a:hover {
   background-color: #2678b2;
   border-color: #2678b2;
 }
-
 /* Add CSS for the slider container */
 .slider-container {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* Style for the slider */
 .slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Style for individual slides */
 .slide {
-  min-width: 100%;
+    min-width: 100%;
 }
 
 /* Additional styling for images */
 .slide img {
-  width: 100%; /* Set the width to 100% to be relative to the container width */
-  height: auto; /* Maintain the aspect ratio */
+    width: 1400PX;
+    height: 500PX;
 }
 
 /* Footer CSS */
@@ -90,19 +85,17 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2%; /* Increased padding for better spacing */
+  padding: 6px; /* Increased padding for better spacing */
   margin: 1px 1px;
 }
-
 /* CSS for footer icons */
 .footer-icons {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .footer-icons a {
-  margin: 0 1.33%; /* Adjust the margin to make it 1% of the container width */
+  margin: 0 10px; /* Adjust the margin for spacing */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -110,20 +103,18 @@ footer {
 }
 
 .footer-icons img {
-  width: 2.4%; /* Reduced icon size relative to the container width */
-  height: auto; /* Maintain the aspect ratio */
+  width: 24px; /* Reduced icon size */
+  height: 24px; /* Reduced icon size */
 }
 
 /* CSS for footer text */
 .footer-text {
   text-align: center;
-  font-size: 3%; /* Adjust font size to be relative to the container width */
+  font-size: 30px;
   margin: 0;
 }
-
-/* Copyright and attribution text */
-.copyright-text {
-  text-align: center;
-  font-size: 3%; /* Adjust font size to be relative to the container width */
-  margin: 0;
+{Facebook Icon
+YouTube Icon
+WhatsApp Icon
+All Rights Reserved © 2023 ELECTROSOLVEZ Developed By: Inam Ullah
 }

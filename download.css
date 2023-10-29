@@ -25,6 +25,26 @@ header {
     font-size: 42px;
     text-align: center;
   }
+  table {
+    border-collapse: collapse;
+    padding: 10px; /* Add 10px of padding to the whole table */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 2px; /* Add 2px of padding to table cells */
+}
+
+th {
+    background-color: #333; /* Replace with your desired color */
+    color: #fff; /* Text color for the header cells, optional */
+}
+
+/* Add hover effect for table rows */
+tr:hover {
+    background-color: #f2f2f2; /* Change the background color on hover */
+}
+
   /* Footer CSS */
 footer {
   background-color: #3498db;

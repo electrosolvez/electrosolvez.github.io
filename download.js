@@ -1,11 +1,13 @@
-// script.js
+// Function to update the table when changes occur
+    function updateTable() {
+        // Check if the HTML code has changed (you can implement your own logic here)
+        if (/* Add your condition to check if changes occurred */) {
+            // Perform the table update here
+            document.getElementById("last-modification-time-1").textContent = new Date().toLocaleString();
+        }
+    }
 
-function updateLastModificationTime() {
-    var dateElement = document.getElementById("last-modification-time");
-    var currentDate = new Date();
-    var formattedDate = currentDate.toLocaleString();
-    dateElement.textContent = formattedDate;
-}
-
-updateLastModificationTime();
-document.body.addEventListener('DOMSubtreeModified', updateLastModificationTime);
+    // Call the updateTable function when the page loads
+    window.onload = function() {
+        updateTable();
+    }

@@ -92,24 +92,21 @@
         <link rel="icon" type="image/x-icon" href="ELECTROSOLVEZ-logo.jpg">
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    <body>
-        <header>
-            <img src="ELECTROSOLVEZ-logo.jpg" alt="ELECTROSOLVEZ Logo">
-            <h1>Web App</h1><br>    
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="app.html">Kilometer and Fuel Calculator</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>   
+    <nav>
+        <ul>
+            <li><a href="index.html".html">Home</a></li>
+            <li><a href="app.html">Kilometer and Fuel Calculator</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
     <div class="container">
+        <div id="header">
+               <img src="ELECTROSOLVEZ-logo.jpg" alt="ELECTROSOLVEZ Logo" id="logo" style="width: 100px; height: 100px;">
+        </div>
         <div class="calculator-text">
             <p class="text-center">Kilometer and Fuel Calculator</p>
             <p class="text-center">Distance (in km):</p>
@@ -121,21 +118,10 @@
             <button id="calculate" onclick="calculateFuelConsumption()" class="input-field">Calculate</button>
             <p class="text-center" id="result">Please enter valid values for distance, efficiency, and price.</p>
         </div>
-    </div>
-    <footer>
-        <div class="footer-icons">
-            <a href="https://www.facebook.com/profile.php?id=61552392862402">
-                <img src="Facebook Icon.png" alt="Facebook Icon" style="width: 32px; height: 32px;">
-            </a>
-            <a href="https://youtube.com/channel/UCh3l0GMCKjjebuEwuuJREyg">
-                <img src="YouTube Icon.jpg" alt="YouTube Icon" style="width: 32px; height: 32px;">
-            </a>
-            <a href="https://wa.me/923341215808">
-                <img src="WhatsApp Icon.jpg" alt="WhatsApp Icon" style="width: 32px; height: 32px;">
-            </a>
+        <div id="footer">
+            <p class="text-center">Developed By ELECTROSOLVEZ - 2023</p>
         </div>
-        <p class="footer-text">All Rights Reserved © 2023 ELECTROSOLVEZ Developed By: Inam Ullah</p>
-    </footer>
+    </div>
     <script>
         function calculateFuelConsumption() {
             var distance = parseFloat(document.getElementById("distance").value);

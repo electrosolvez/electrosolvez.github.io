@@ -5,34 +5,6 @@ body {
   padding: 0; /* Remove default padding for full-width border */
   box-sizing: border-box; /* Ensure padding is included in the total width/height */
 }
-/* Header CSS with 1px padding */
-header {
-   background-color: #3498db;
-   text-align: center;
-   padding: 6px;
-   display: flex;
-   align-items: center;
-   margin: 1px 1px; /* Add 1px margin to the left and right */
-}
-
-header img {
-  max-width: 11%;
-  margin-right: 400px;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 42px;
-  text-align: center;
-}
-/*header css end */
-/* Reset default margin and padding on elements */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Set a background color for the entire page */
 body {
   background-color: #f0f0f0;

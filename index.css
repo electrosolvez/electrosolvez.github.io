@@ -79,16 +79,14 @@ nav a:hover {
 
 /* Footer CSS */
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   background-color: #3498db;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 6px; /* Increased padding for better spacing */
-  margin: 1px;
+  margin: 1px 1px;
 }
 /* CSS for footer icons */
 .footer-icons {
